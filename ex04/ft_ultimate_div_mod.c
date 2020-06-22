@@ -1,16 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sbnkosi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/22 07:55:36 by sbnkosi           #+#    #+#             */
-/*   Updated: 2020/06/22 08:02:11 by sbnkosi          ###   ########.fr       */
+/*   Created: 2020/06/22 08:07:12 by sbnkosi           #+#    #+#             */
+/*   Updated: 2020/06/22 08:07:33 by sbnkosi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_ultimate_ft(int *********nbr)
+void 	ft_ultimate_div_mod(int *a, int *b)
 {
-	*********nbr = 42;
+	int tempA = *a / *b;
+	int tempB = *a % *b;
+	int *a = tempA;
+	int *b = tempB;
 }
