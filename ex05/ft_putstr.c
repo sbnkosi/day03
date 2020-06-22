@@ -1,20 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sbnkosi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/22 08:03:12 by sbnkosi           #+#    #+#             */
-/*   Updated: 2020/06/22 08:59:02 by sbnkosi          ###   ########.fr       */
+/*   Created: 2020/06/22 08:10:16 by sbnkosi           #+#    #+#             */
+/*   Updated: 2020/06/22 09:00:08 by sbnkosi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-  
-void	ft_swap(int *a,int *b)
+#include <unistd.h>
+
+void 	ft_putchar(char c)
 {
-	int tempA = *a;
-	int tempB = *b;
-	*a = tempA;
-	*b = tempB;
+   	 write(1, &c, 1);
+}
+
+void 	ft_putstr(char *str)
+{
+  int i = 0;
+  while(str[i] != '\0')
+  {
+      ft_putchar(str[i]);
+      i++;
+ }
 }
